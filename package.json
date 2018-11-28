@@ -1,0 +1,30 @@
+{
+  "name": "mwalimu",
+  "version": "1.0.0",
+  "description": "Voice skill for learning Swahili",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip": "cp package.json ./dist && cp -R node_modules dist/node_modules/ && zip -r ../index.zip dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farookkhan/mwalimu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farookkhan/mwalimu/issues"
+  },
+  "homepage": "https://github.com/farookkhan/mwalimu#readme",
+  "dependencies": {
+    "ask-sdk": "^2.3.0",
+    "ask-sdk-core": "^2.3.0",
+    "ask-sdk-model": "^1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  }
+}
